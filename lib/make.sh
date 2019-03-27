@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 TF_INC=$(python -c 'import tensorflow as tf; print(tf.sysconfig.get_include())')
 TF_LIB=$(python -c 'import tensorflow as tf; print(tf.sysconfig.get_lib())')
-CUDA_PATH=/usr/local/cuda/
+CUDA_PATH=/usr/local/cuda-9.0/
 CXXFLAGS=''
 
 if [[ "$OSTYPE" =~ ^darwin ]]; then
